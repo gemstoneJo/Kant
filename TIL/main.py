@@ -5,8 +5,15 @@ print("="*30)
 
 import random
 
+#변수
 user_score = 0
-compuer_scroe = 0
+computer_scroe = 0
+
+#플레이어 이름
+user_name = input("플레이어의 이름을 입력하세요")
+
+print(user_name)
+
 
 while True:
 # 컴퓨터
@@ -16,7 +23,7 @@ while True:
     computer_choice = choices[computer]
      
 #플레이어
-    user_input = input("가위(1), 바위(2), 보(3), 종료(q)")
+    user_input = input("가위(1), 바위(2), 보(3), 종료(q)") 
 
     if user_input == "q":
         break
@@ -48,6 +55,9 @@ while True:
         print("패배")
     
     
-    print (f"나: {user_choice} vs 컴퓨터: {computer_choice}")
-    # print (f"=>)
-    
+
+
+#플레이어 이름 입력 받아서 승패 기록에 표시
+#3판 2선 승제로 최종 결과 계산
+#각 판별 승패 목록 표시
+#연승 기록 누적해서 표시
